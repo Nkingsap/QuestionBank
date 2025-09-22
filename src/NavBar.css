@@ -1,0 +1,179 @@
+/* Custom Toggle Button */
+.custom-toggle-btn {
+  padding: 8px;
+  border: none;
+  background: transparent;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+  margin-left : auto;
+}
+
+.custom-toggle-btn:hover {
+  background-color: #f8f9fa;
+}
+
+/* Hamburger Icon */
+.hamburger-icon {
+  width: 24px;
+  height: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger-icon span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #333;
+  border-radius: 1px;
+  transition: all 0.3s ease;
+}
+
+/* Menu Overlay */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1040;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.menu-overlay-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Sliding Menu Panel */
+.sliding-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 320px;
+  background-color: white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  z-index: 1050;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.sliding-menu-open {
+  transform: translateX(0);
+}
+
+/* Menu Header */
+.menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.menu-title {
+  margin: 0;
+  font-weight: 600;
+  color: #212529;
+  font-size: 1.125rem;
+}
+
+/* Close Button */
+.close-btn {
+  padding: 8px;
+  border: none;
+  background: transparent;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-btn:hover {
+  background-color: #f8f9fa;
+}
+
+/* Close Icon (X) */
+.close-icon {
+  position: relative;
+  width: 16px;
+  height: 16px;
+}
+
+.close-icon span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #666;
+  border-radius: 1px;
+  transform-origin: center;
+}
+
+.close-icon span:first-child {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.close-icon span:last-child {
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+/* Menu Navigation */
+.menu-nav {
+  padding: 12px 0;
+}
+
+/* Menu Items */
+.menu-item {
+  width: 100%;
+  text-align: left;
+  padding: 16px 24px;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #e9ecef;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  color: #212529;
+}
+
+.menu-item:hover {
+  background-color: #f8f9fa;
+  color: #0d6efd;
+}
+
+.menu-item-active {
+  color: #0d6efd !important;
+  background-color: rgba(13, 110, 253, 0.1);
+}
+
+.menu-item-active:hover {
+  background-color: rgba(13, 110, 253, 0.15);
+}
+
+.menu-item-text {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+/* Remove the last border from the last menu item */
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sliding-menu {
+    width: min(320px, 80vw);
+  }
+}

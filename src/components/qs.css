@@ -1,0 +1,349 @@
+/* QuestionPaper-mobile.css - Mobile optimized version */
+
+.question-paper-container {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: linear-gradient(135deg, #2a2c35 0%, #3a363f 100%);
+  min-height: 100vh;
+  color: #2d3436;
+}
+
+.question-paper-header {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem 0.75rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.question-paper-header-title {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 0.3rem;
+  font-weight: 700;
+}
+
+.question-paper-header-subtitle {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
+  font-weight: 500;
+}
+
+.question-paper-header-desc {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-bottom: 0.75rem;
+}
+
+.question-paper-admin-toggle {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.question-paper-main-container {
+  max-width: 100%;
+  margin: 0.75rem auto;
+  padding: 0 0.75rem;
+}
+
+.question-paper-years-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.question-paper-year-card {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  text-align: left;
+}
+
+.question-paper-year-card-title {
+  color: white;
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+.question-paper-year-card-subtitle {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.question-paper-view {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 1rem 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.question-paper-back-btn {
+  background: #444;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.question-paper-view-title {
+  color: white;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.question-paper-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.question-paper-card {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0;
+  text-align: left;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.question-paper-card-title {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+.question-paper-card-subtitle {
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+
+.question-paper-questions-container {
+  margin-top: 0.75rem;
+}
+
+.question-paper-question-item {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.question-paper-question-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.question-paper-question-title {
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.question-paper-question-actions {
+  display: flex;
+  gap: 0.4rem;
+  justify-content: center;
+}
+
+.question-paper-action-btn {
+  background: #555;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.question-paper-download-btn {
+  background: #333;
+}
+
+.question-paper-question-image {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 0.4rem;
+}
+
+.question-paper-question-meta {
+  margin-top: 0.4rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.question-paper-admin-title {
+  color: white;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.question-paper-upload-form {
+  max-width: 100%;
+}
+
+.question-paper-form-group {
+  margin-bottom: 1.5rem;
+}
+
+.question-paper-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.question-paper-select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.question-paper-select option {
+  background: #333;
+  color: white;
+}
+
+.question-paper-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.question-paper-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.question-paper-input:focus,
+.question-paper-select:focus {
+  border-color: rgba(255, 255, 255, 0.4);
+  outline: none;
+}
+
+.question-paper-upload-btn {
+  width: 100%;
+  background: #444;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.question-paper-upload-btn-disabled {
+  background: #666;
+  cursor: not-allowed;
+}
+
+.question-paper-upload-progress {
+  margin-top: 1rem;
+  text-align: center;
+  color: #4CAF50;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.question-paper-loading {
+  text-align: center;
+  color: white;
+  padding: 2rem 1rem;
+  font-size: 1rem;
+}
+
+.question-paper-no-questions {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  font-style: italic;
+  padding: 2rem 1rem;
+  font-size: 1rem;
+}
+
+.question-paper-modal {
+  display: block;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+}
+
+.question-paper-modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 95%;
+  max-height: 95%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.question-paper-modal-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.question-paper-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1001;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

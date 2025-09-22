@@ -204,13 +204,3 @@ If you find any bugs or have feature requests, please create an issue in the Git
 - Expected behavior
 - Screenshots (if applicable)
 
-## 📞 Contact
-
-For questions or support, reach out through:
-- Facebook: [nking.sap.9](https://facebook.com/nking.sap.9)
-- WhatsApp: [+91 9863330216](https://wa.me/919863330216)
-- Instagram: [@nkingsap](https://instagram.com/nkingsap)
-
----
-
-**Don Bosco College Autonomous Question Bank Portal** - Empowering students with comprehensive learning resources.

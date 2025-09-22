@@ -41,8 +41,8 @@ A comprehensive web application for managing and accessing question papers for D
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd question-bank-portal
+   https://github.com/Nkingsap/QuestionBank.git
+   cd QuestionBank
    ```
 
 2. **Install dependencies**

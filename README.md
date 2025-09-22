@@ -1,6 +1,6 @@
-# Question Bank Portal
+# Question Bank Portal 
 
-A comprehensive web application for managing and accessing question papers for Don Bosco College Autonomous. This platform provides students with organized access to question papers across different years, semesters, and examination types.
+A comprehensive web application for managing and accessing question papers for xxx college. This platform provides students with organized access to question papers across different years, semesters, and examination types.
 
 ## 🚀 Features
 
@@ -41,8 +41,8 @@ A comprehensive web application for managing and accessing question papers for D
 
 1. **Clone the repository**
    ```bash
-   https://github.com/Nkingsap/QuestionBank.git
-   cd QuestionBank
+   git clone https://github.com/Nkingsap/QuestionBank.git
+   cd trypo
    ```
 
 2. **Install dependencies**
@@ -58,7 +58,8 @@ A comprehensive web application for managing and accessing question papers for D
 4. **Configure Cloudinary**
    - Sign up at [Cloudinary](https://cloudinary.com)
    - Create an upload preset named `qbank22`
-   - Update the cloud name in upload functions
+   - Note your cloud name from the dashboard
+   - Update the Cloudinary configuration in upload functions
 
 5. **Start the development server**
    ```bash
@@ -160,11 +161,34 @@ const firebaseConfig = {
 Update the Cloudinary configuration in upload functions:
 
 ```javascript
-const response = await fetch('https://api.cloudinary.com/v1_1/your-cloud-name/image/upload', {
-  method: 'POST',
-  body: formData
-});
+const uploadToCloudinary = async (file) => {
+  const formData = new FormData();
+  formData.append('file', file);
+  formData.append('upload_preset', 'uploadpreset'); // Your upload preset name
+  formData.append('cloud_name', 'your-cloud-name'); // Your Cloudinary cloud name
+
+  const response = await fetch('https://api.cloudinary.com/v1_1/your-cloud-name/image/upload', {
+    method: 'POST',
+    body: formData
+  });
+
+  const data = await response.json();
+  return data.secure_url;
+};
 ```
+
+**Cloudinary Configuration Steps:**
+1. Sign up at [Cloudinary](https://cloudinary.com)
+2. Go to Settings → Upload → Add upload preset
+3. Create an unsigned upload preset named `qbank22`
+4. Set the following options:
+   - **Signing Mode**: Unsigned
+   - **Resource Type**: Image
+   - **Format**: Auto
+   - **Quality**: Auto
+   - **Access Rights**: Public Read
+5. Copy your Cloud Name from the dashboard
+6. Replace `your-cloud-name` in the upload URL with your actual cloud name
 
 ## 🚀 Deployment
 
@@ -192,9 +216,6 @@ const response = await fetch('https://api.cloudinary.com/v1_1/your-cloud-name/im
 - **Misherutso Lohe** - Frontend Developer
 - **Vincent** - UI/UX Designer
 
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## 🐛 Bug Reports
 
@@ -204,3 +225,12 @@ If you find any bugs or have feature requests, please create an issue in the Git
 - Expected behavior
 - Screenshots (if applicable)
 
+## 📞 Contact
+
+For questions or support, reach out through:
+
+- Instagram: [@nkingsap](https://instagram.com/nkingsap)
+
+---
+
+**Don Bosco College Autonomous Question Bank Portal** - Empowering students with comprehensive learning resources.

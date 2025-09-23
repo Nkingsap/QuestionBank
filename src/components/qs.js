@@ -22,14 +22,14 @@ const QuestionPaper = () => {
   const [firebaseInitialized, setFirebaseInitialized] = useState(false);
 
   // Firebase configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyCSu3oUZ9IsiY7YW8rU7HBgDq70uC31QCM",
-    authDomain: "owowo-9c937.firebaseapp.com", 
-    projectId: "owowo-9c937",
-    storageBucket: "owowo-9c937.firebasestorage.app",
-    messagingSenderId: "326806553855",
-    appId: "1:326806553855:web:bd7c89eaa743643460f8ca",
-  };
+    const firebaseConfig = {
+      apiKey: "your-api-key",
+      authDomain: "your-auth-domain",
+      projectId: "your-project-id",
+      storageBucket: "your-storage-bucket",
+      messagingSenderId: "your-messaging-sender-id",
+      appId: "your-app-id"
+    };
 
   useEffect(() => {
     // Load Firebase scripts

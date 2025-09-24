@@ -232,5 +232,3 @@ For questions or support, reach out through:
 - Instagram: [@nkingsap](https://instagram.com/nkingsap)
 
 ---
-
-**Don Bosco College Autonomous Question Bank Portal** - Empowering students with comprehensive learning resources.
